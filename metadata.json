@@ -1,0 +1,10 @@
+{
+  "name": "Remix Remix Remix Remix AI-Powered Misinformation and Violence Detection System",
+  "description": "An advanced college-level AI safety platform featuring NLP-driven misinformation claim verification, multimodal visual violence and threat detection, real-time alert system, and explainable AI insights.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

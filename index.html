@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI-Powered Misinformation and Violence Detection System</title>
+    <meta name="description" content="An easy-to-use AI safety platform helping people detect misinformation, verify viral claims, spot harmful visual violence, and understand online safety in real-time." />
+    <meta property="og:title" content="AI Safety Guardian - Misinformation & Threat Detection" />
+    <meta property="og:description" content="An easy-to-use AI safety platform helping people detect misinformation, verify viral claims, spot harmful visual violence, and understand online safety in real-time." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Suppress benign Vite dev websocket errors in sandboxed preview environments
+      window.addEventListener('unhandledrejection', function(event) {
+        var reasonStr = (event && event.reason) ? (event.reason.message || String(event.reason)) : '';
+        if (
+          reasonStr.indexOf('WebSocket') !== -1 ||
+          reasonStr.indexOf('[vite]') !== -1 ||
+          reasonStr.indexOf('websocket') !== -1
+        ) {
+          event.preventDefault();
+          if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = (event && event.message) ? String(event.message) : '';
+        if (
+          msg.indexOf('WebSocket') !== -1 ||
+          msg.indexOf('[vite]') !== -1 ||
+          msg.indexOf('websocket') !== -1
+        ) {
+          event.preventDefault();
+          if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

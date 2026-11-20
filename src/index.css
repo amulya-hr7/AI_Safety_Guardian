@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-bg-base: #0B0B0C;
+    --color-bg-card: #141417;
+    --color-bg-card-inner: #1C1C21;
+    --color-border-gold: rgba(212, 175, 55, 0.25);
+    --color-gold-primary: #D4AF37;
+    --color-gold-light: #F3E5AB;
+    --color-gold-bright: #F5C542;
+    --color-gold-dark: #996515;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: #0B0B0C;
+    color: #F4F4F5;
+  }
+
+  body {
+    background-color: #0B0B0C;
+    color: #F4F4F5;
+    min-height: 100vh;
+  }
+}
+
+/* Tactile button press feedback and hover transitions */
+button, [role="button"], a.btn {
+  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+button:active:not(:disabled), [role="button"]:active:not(:disabled) {
+  transform: scale(0.965);
+}
+
+button:disabled, [role="button"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Custom smooth scrollbar in black and gold */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.4);
+  border-radius: 9999px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.7);
+}
+
+
